@@ -142,3 +142,5 @@ CRISPY_TEMPLATE_PACK = 'bootrap4'
 LOGIN_REDIRECT_URL = 'home'
 
 LOGOUT_REDIRECT_URL = 'index'
+
+AUTH_USER_MODEL = 'account.SiteUser'
