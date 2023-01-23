@@ -16,3 +16,8 @@ class UserLoginView(LoginView):
 
 class UserRegisterView(UserRegistrationView):
     form_class = CustomUserRegistrationForm
+
+
+@login_required
+def homepage(request):
+    return render(request, 'home.html', {'user': request.user.get_fullname()})
