@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+<div class="row">
+    <div class="col-lg-4 col-md-6 col-sm-8 justify-content-center">
+        <div class="card">
+            <div class="card-body">
+                <a href="{% url  'account:login' %}" class="button login">Login</a>
+                <a href="{% url  'account:signup' %}" class="button btn-dark">Signup</a>
+            </div>
+            <div class="card-footer text-center">
+
+            </div>
+        </div>
+    </div>
+
+</div>
