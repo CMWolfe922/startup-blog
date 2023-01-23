@@ -6,11 +6,10 @@ from phonenumber_field.modelfields import PhoneNumberField
 
 
 class SiteUser(AbstractUser):
-    phonenumber = PhoneNumberField(required=True, unique=True)
+    phonenumber = PhoneNumberField(unique=True)
 
     class Meta:
         verbose_name = "siteuser"
-        related_name = "user"
         ordering = ['first_name', 'last_name',
                     'phonenumber', 'email', 'username', 'password']
 
